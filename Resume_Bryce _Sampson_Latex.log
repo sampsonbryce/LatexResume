@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.28)  31 OCT 2015 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.28)  2 NOV 2015 09:15
 entering extended mode
 **"Resume_Bryce _Sampson_Latex.tex"
 ("Resume_Bryce _Sampson_Latex.tex"
@@ -202,15 +202,15 @@ LaTeX Font Info:    ... okay on input line 22.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -241,17 +241,12 @@ LaTeX Font Info:    ... okay on input line 22.
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks17
-)
-Overfull \hbox (2.32593pt too wide) in paragraph at lines 38--40
-[]  
- []
-
-<C:/Users/samps_000/Pictures/C++Skill.jpg, id=1, 150.5625pt x 10.0375pt>
+) <C:/Users/samps_000/Pictures/C++Skill.jpg, id=1, 150.5625pt x 10.0375pt>
 File: C:/Users/samps_000/Pictures/C++Skill.jpg Graphic file (type jpg)
 
 <use C:/Users/samps_000/Pictures/C++Skill.jpg>
 Package pdftex.def Info: C:/Users/samps_000/Pictures/C++Skill.jpg used on input
- line 80.
+ line 83.
 (pdftex.def)             Requested size: 150.56212pt x 10.03746pt.
 
 <C:/Users/samps_000/Pictures/PythonSkill.jpg, id=2, 150.5625pt x 10.0375pt>
@@ -259,7 +254,7 @@ File: C:/Users/samps_000/Pictures/PythonSkill.jpg Graphic file (type jpg)
 
 <use C:/Users/samps_000/Pictures/PythonSkill.jpg>
 Package pdftex.def Info: C:/Users/samps_000/Pictures/PythonSkill.jpg used on in
-put line 84.
+put line 87.
 (pdftex.def)             Requested size: 150.56212pt x 10.03746pt.
 
 <C:/Users/samps_000/Pictures/JavaSkill.jpg, id=3, 150.5625pt x 10.0375pt>
@@ -267,14 +262,18 @@ File: C:/Users/samps_000/Pictures/JavaSkill.jpg Graphic file (type jpg)
 
 <use C:/Users/samps_000/Pictures/JavaSkill.jpg>
 Package pdftex.def Info: C:/Users/samps_000/Pictures/JavaSkill.jpg used on inpu
-t line 88.
+t line 91.
 (pdftex.def)             Requested size: 150.56212pt x 10.03746pt.
 File: C:/Users/samps_000/Pictures/JavaSkill.jpg Graphic file (type jpg)
 
 <use C:/Users/samps_000/Pictures/JavaSkill.jpg>
 Package pdftex.def Info: C:/Users/samps_000/Pictures/JavaSkill.jpg used on inpu
-t line 92.
+t line 95.
 (pdftex.def)             Requested size: 150.56212pt x 10.03746pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 197.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 197.
  [1
 
 {C:/Users/samps_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
@@ -282,25 +281,27 @@ s/samps_000/Pictures/C++Skill.jpg> <C:/Users/samps_000/Pictures/PythonSkill.jpg
 > <C:/Users/samps_000/Pictures/JavaSkill.jpg>] ("Resume_Bryce _Sampson_Latex.au
 x") ) 
 Here is how much of TeX's memory you used:
- 2670 strings out of 493673
- 35049 string characters out of 3141517
- 109659 words of memory out of 3000000
- 6008 multiletter control sequences out of 15000+200000
- 11383 words of font info for 25 fonts, out of 3000000 for 9000
+ 2679 strings out of 493673
+ 35153 string characters out of 3141517
+ 109564 words of memory out of 3000000
+ 6014 multiletter control sequences out of 15000+200000
+ 13697 words of font info for 28 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  25i,5n,43p,319b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecxc1000.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\samps_000\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\samps_0
-00\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecxc1200.pk> <C:
+dpi600\ecrm0700.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecxc1000.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\samps_000\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\samps_0
+00\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:
 \Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-bx1728.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecrm1200.pk>
-Output written on "Resume_Bryce _Sampson_Latex.pdf" (1 page, 137389 bytes).
+xc1200.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecbx1728.pk> <C:\Users\samps_000\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\samps_000\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk>
+Output written on "Resume_Bryce _Sampson_Latex.pdf" (1 page, 143434 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
+ 306 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
