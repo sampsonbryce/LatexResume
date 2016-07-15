@@ -8,8 +8,9 @@
 \pagestyle{fancy}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage[abspath]{currfile}[2012/05/06]
 \thispagestyle{empty}
-\graphicspath{{C:/Users/samps_000/Pictures/}}
+\graphicspath{{\currfileabsdir}}
 \definecolor{glaucous}{rgb}{0.38, 0.51, 0.71}
 
 \setlength{\columnseprule}{4pt}
@@ -43,18 +44,19 @@ sampson.bryce@yahoo.com | 530-859-5330 | 605 West 6th Street Apt 1 Chico, CA 959
 \begin{footnotesize}
 \textsc{California State University, Chico}
 \hfill
-\color{gray}Expected Winter 2018\\
+\color{Cerulean}\textbf{Major GPA: }\color{black}3.95\\
+
 \color{black}
 \smallskip
 
 \color{Cerulean}\textbf{Major: }\color{black}Computer Science
 \hfill
-\color{Cerulean}\textbf{Major GPA: }\color{black}3.95\\
+\color{Cerulean}\textbf{Cumulative GPA: }\color{black}3.65\\
 \smallskip
 
 \color{Cerulean}\textbf{Minor: }\color{black}Computer Animation and Game Development
 \hfill
-\color{Cerulean}\textbf{Cumulative GPA: }\color{black}3.65\\
+\color{gray}Class Standing Junior: Expected Graduation 2018\\
 \smallskip
 
 \end{footnotesize}
@@ -67,8 +69,6 @@ sampson.bryce@yahoo.com | 530-859-5330 | 605 West 6th Street Apt 1 Chico, CA 959
 \begin{center}
 \textbf{\textsc{-Skills-}}
 
-\begin{small}
-\end{small}
 \flushleft
 Python
 \hfill
@@ -95,11 +95,6 @@ Java(Android Dev)
 \includegraphics{JavaSkill}\\
 \smallskip
 
-\center
-\textbf{\textsc{-Technology-}}\\
-\smallskip
-Git | Vim | Linux | Android | Windows | Mac OS
-
 \end{center}
 
 \columnbreak
@@ -108,34 +103,57 @@ Git | Vim | Linux | Android | Windows | Mac OS
 \footnotesize
 \color{black}\textsc{\textbf{ACM Club | CSU, Chico}}\\
 \flushleft
-\color{Cerulean}Secretary: \color{gray} Participated in the organization of the club and teams for competitions.(Previously held Fall 2015)
+\color{Cerulean}Secretary: \color{gray} Participated in the organization of the club and teams for competitions. Competed in Fall 2015 ACM Regional Competition
 
 \center
 \color{black}\textsc{\textbf{Web Development Club | CSU, Chico}}\\
 \flushleft
-\color{Cerulean}Member: \color{gray}Introduced to languages and technologies such as AngularJS, Foundation, Bootstrap, Git, and Electron. (Previously held Fall 2015)
+\color{Cerulean}Member: \color{gray}Introduced to languages and technologies such as AngularJS, Foundation, Bootstrap, Git, and Electron.
 
-\center
-\color{black}
-\textbf{\textsc{Frameworks}}\\
-\color{Cerulean}React/Redux | Node.js\color{gray}\\
-\textbf{Learning:}
-Angular2 | Ruby on Rails | ASP.NET Core
 
 \end{multicols}
 
 \noindent\rule{19cm}{0.4pt}
 
-
+\center
+\color{black}
+\textbf{\textsc{-Software Technology/Frameworks-}}\\
+\medskip
+\color{Cerulean}React/Redux | Node.js  | Express | Python | Flask  | C++ | JS | HTML/CSS | Java | XML | Stormpath\color{gray}\\
+\smallskip
+Git | Vim | Linux | Android | Windows | Mac OS\\
+\smallskip
+\textbf{Learning:}
+Angular2 | ASP.NET Core
+\color{black}
 \begin{center}
-\textbf{\textsc{-Internships-}}\\
+\textbf{\textsc{-Internship-}}\\
 \end{center}
 \begin{footnotesize}
 
 \flushleft
-\color{Cerulean}\textbf{Lawrence Livermore National Laboratory (Jan 2016 - Current):} 
-\color{Black}I am currently employed in a Co-op position, developing a Graphical User Interface, CDATGUI, for a large scale visualization and analysis tool developed at the lab. The project was originally in \color{TealBlue}Python and Pyside QT, \color{Black} however, was switched to a web app, vCDAT, using \color{TealBlue}React/Redux\color{Black}, interfacing with a \color{TealBlue}Flask \color{Black}API. All code for the project is open source and can be found on my github account.\\
+\color{Cerulean}\textbf{Lawrence Livermore National Laboratory (Jan 2016 - August 2016):} 
+\color{Black}Employed in a Co-op position, developing a Graphical User Interface for a large scale climate data visualization and analysis tool developed at the lab. The original project, CDATGUI, was in \color{TealBlue}Python and Pyside Qt, \color{Black} however, it was dropped from development in favor of a web app, vCDAT, implemented with \color{TealBlue}React/Redux\color{Black}, interfacing with a \color{TealBlue}Flask \color{Black}API. See github for source code.\\
+
+\center
+-Lab Hackathons-
+\begin{multicols}{2}
+\center
+\color{Cerulean}ESGF Seach Client:\\ \color{black}
+Recreated ESGF Search client for accessing\\
+global climate data\\
+Team Size: 2
+
+\columnbreak
+
+\color{Cerulean}Javascript Distributed Multi Processing:\\ \color{black}
+Javascript library to distribute embarrasingly parallel problems over a large number of clients connected to a site\\
+Team Size: 6
+
+
+\end{multicols}
 \medskip
+
 \end{footnotesize}
 
 \noindent\rule{19cm}{0.4pt}
@@ -146,22 +164,22 @@ Angular2 | Ruby on Rails | ASP.NET Core
 \begin{footnotesize}
 
 \flushleft
-\color{Cerulean}\textbf{SnapStyle Fashion Social Media App(Java/XML/Node.js):} 
-\color{Black}As a project to learn the full stack of Android app development, I am developing a Social Media app that emphasizes communication and suggestions for personal fashion. For the back end I am running an \color{TealBlue}Amazon MySql RDS \color{Black}with a \color{TealBlue}Node.js \color{Black} server on an \color{TealBlue}Amazon EC2 \color{Black}instance. The front end app is written in \color{TealBlue}Java and XML. \color{Black} I incorporated the \color{TealBlue}Stormpath \color{Black}authentication API for all user encryption and session handling.\\
+\color{Cerulean}\textbf{SnapStyle Fashion Social Media App:} 
+\color{Black}SnapStyle is a Social Media app developed to learn the full stack of Android Development. It emphasizes communication and suggestions for personal fashion. The back-end utilizes a \color{TealBlue}Amazon MySql RDS \color{Black}with a \color{TealBlue}Node.js \color{Black} server on an \color{TealBlue}Amazon EC2 \color{Black}instance. The front-end app is written in \color{TealBlue}Java and XML, \color{Black} and incorporates the \color{TealBlue}Stormpath \color{Black}authentication API for all user encryption and session handling.\\
 \smallskip
 \setlength\parindent{24pt}\textbf{Stack:} \color{TealBlue} Java/XML | Stormpath(Authentication) | Node.js | MySql
 \bigskip
 
 \setlength\parindent{0pt}
-\color{Cerulean}\textbf{Competitions/Programming Problems (Python):}
-\color{Black}To solve all ACM problems, Hackerrank problems, CodingGame problems as well as participate in ACM, Hackerrank, and CodinGame competitions, I use \color{TealBlue}Python.\color{Black}
+\color{Cerulean}\textbf{Competitions/Programming Problems:}
+\color{Black}Participate in ACM, Hackerrank, and CodingGame challenges and competitions using \color{TealBlue}Python.\color{Black}
 
-\bigskip
+\smallskip
 \begin{center}
 \textbf{\textsc{-Upcoming Work-}}\\
 \end{center}
 
-\color{black}Starting early August I will be working part-time for Social High Rise, a startup based in Chico. I will work in collaboration with a \color{TealBlue}Koder \color{black} development team to create a SaaS application using \color{TealBlue}Angular2 \color{black}and \color{TealBlue}ASP.NET Core\color{black}. Additionally I will be in charge of updating and maintaining their \color{TealBlue}Wordpress \color{black} site.
+\color{black}Starting early August, will be working part-time for Social High Rise, a startup based in Chico.I will be working in collaboration with a \color{TealBlue}Koder \color{black} development team to create a SaaS application using \color{TealBlue}Angular2 \color{black}and \color{TealBlue}ASP.NET Core\color{black}. Additionally I will be in charge of updating and maintaining their \color{TealBlue}Wordpress \color{black} site.
 
 \end{footnotesize}
 
