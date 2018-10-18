@@ -8,6 +8,8 @@
 \pgfplotsset{compat=1.8}
 \usepackage{multicol}
 \usepackage{eso-pic}
+\usepackage{scrextend}
+\usepackage{setspace}
 \definecolor{primary}{HTML}{de4f4f}
 \definecolor{secondary}{HTML}{2b2e39}
 \definecolor{accent}{HTML}{e0e0e0}
@@ -103,43 +105,80 @@
     \end{tikzpicture}
     \smallbreak
     \footnotesize
-    \color{secondary}Git | Vim | Linux | Windows | MacOS | Android
     \end{center}
     \columnbreak
-    \center
-    \footnotesize
-    \textbf{\color{white}\normalsize ACM Club | CSU, Chico}\\
-    \smallskip
-    {\color{accent}Algorithms Officer} \hfill \textit{\color{accent}Spring 2017}\\
-    \begin{itemize}
-    \setlength{\itemsep}{0pt}
-        \item Competed in Fall 2016 ACM Competition
-        \item Research and present/teach algorithms at club meetings to be used during competition
-    \end{itemize}
-
-    \center
-    \textbf{\color{white} 
-        \normalsize
-        Formula SAE Electric | CSU, Chico
-    }\\
     
-    \smallskip
-    {\color{accent}Member} \hfill \textit{\color{accent}Spring 2017}
+    \begin{multicols}{2}
+	\center    
+    \textbf{\color{white}\large Proficient In}\\
+    \flushleft
+    \setstretch{0.8}
+    \begin{addmargin}[2em]{0em}
+    Git\\
+    Vim\\
+    Agile\\
+    Linux\\
+    jQuery\\
+    Vue.js\\
+    Node.js\\
+    React Native\\
+    SQL Databases\\
+    ASP.NET + C\#\\
+    React.js + Redux\\
 
-    \begin{itemize}
-    \setlength{\itemsep}{0pt}
-        \item Develop Formula SAE car to compete nationally
-        \item Contribute to batteries and motor control team
-    \end{itemize}
+    
+    \end{addmargin}
+    
+    \columnbreak
+    \center
+    \textbf{\color{white}\large Familiar With}\\
+    \begin{addmargin}[0em]{2em}
 
+	\begin{flushright}
+	\vspace{4mm}
+	Enironment Design\\
+	Kubernetes\\
+	WordPress\\
+	CircleCI\\
+	Docker\\
+	NoSql\\
+	SCSS\\
+	Bash\\
+	Java\\
+	Php\\
+	Go\\
+    \end{flushright}
+    \end{addmargin}
 
+    
+    \end{multicols}
     \end{multicols}
 }}
     \color{secondary}
     \center
+    
+    % Employment
     \begin{center}
-    \textbf{\Large------ Internships ------}\\
+    \textbf{\Large------ Employment ------}\\
     \end{center}
+    \vspace{-2mm}
+    \begin{footnotesize}
+    \flushleft
+    \textbf{\color{primary}\large DesignByHumans} {\color{primary}designbyhumans.com} \hfill \textbf{\color{Cerulean}HTML/SCSS/JS | jQuery | PHP}\\ 
+    {\color{primary} part-time | August 2018 - Current} \hfill {\color{Cerulean} Junior Front-End Engineer}
+    \vspace{-2mm}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Develop web pages based on designer mockups, refactor backend code, and implement new features both customer facing and internal
+    \end{itemize}
+    \end{footnotesize}
+    
+    % Interships
+    \begin{center}
+    \textbf{\Large-- Internships --}\\
+    \end{center}
+    \vspace{-5mm}
+
     \begin{footnotesize}
     \flushleft
     \textbf{\color{primary}\large Workday Inc} \hfill \textbf{\color{Cerulean}Python | Bash}\\ 
@@ -163,10 +202,8 @@
     \vspace{-2mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
-        \item Employed in a Co-op position, developing a Graphical User Interface for a large scale climate data visualization and analysis tool developed at the lab.
-        \item Developed GUI in both PySide Qt and from scratch in HTML/CSS/JS, jQuery, React/Redux, and Flask
+        \item Employed in a Co-op position, developing a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and from scratch in HTML/CSS/JS, jQuery, React/Redux, and Flask
 
-        \item Organized and presented demos of project to our team and communicated development timeline
         \item Collaborated with scientists using alpha, beta and previous versions of GUI to improve user experience and implement new functionality
     \end{itemize}
 
@@ -175,11 +212,13 @@
 \colorbox{secondary}{
     \parbox{45em}{
     \color{white}
+    \vspace{-2mm}
+
     \begin{center}
     \textbf{\Large------ Projects ------}\\
     \end{center}
     
-    \vspace{-2mm}
+    \vspace{-5mm}
     \begin{footnotesize}
 
     \textbf{\color{primary}\large Hero Home } \hfill \textbf{\color{Cerulean}Vue.js | HTML/CSS | Node.js/Express | Nginx }\\
@@ -191,14 +230,14 @@
 
     \flushleft
 
-    \textbf{\color{primary}\large Datasift Sentiment Visualization} \hfill \textbf{\color{Cerulean} Node.js/Express | React | D3 | HTML/CSS/JS | jQuery}
+    \textbf{\color{primary}\large The Rek} \hfill \textbf{\color{Cerulean} Node.js | React Native | GraphQL | Prisma | Apollo}
     \begin{itemize}
-        \item Utilized Datasift Facebook Topic Data API trial to create D3 visualization representing sentiment in various US states
+        \item Team of 3 developers and 1 entrepreneur building a mobile app for The Rekweem, and high class business encompassing haircuts, massages, and mani-pedi. App provides functionality for storing headshots, booking appointments with multiple people and multiple services, and ecommerce.
     \end{itemize}
 
     \end{footnotesize}
 }}
 
-\center
-Created with \LaTeX
+%\center
+%Created with \LaTeX
 \end{document}
