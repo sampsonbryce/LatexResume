@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.16)  18 OCT 2018 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.16)  18 OCT 2018 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,7 +703,7 @@ Overfull \hbox (2.18939pt too wide) in paragraph at lines 156--158
 Here is how much of TeX's memory you used:
  25060 strings out of 492642
  633472 string characters out of 6135566
- 846701 words of memory out of 5000000
+ 846704 words of memory out of 5000000
  28462 multiletter control sequences out of 15000+600000
  28204 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -718,7 +718,7 @@ public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sfsx2488.pfb>
-Output written on Resume_Bryce_Sampson_Technical.pdf (1 page, 143442 bytes).
+Output written on Resume_Bryce_Sampson_Technical.pdf (1 page, 143456 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
