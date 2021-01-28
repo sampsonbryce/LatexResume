@@ -10,6 +10,7 @@
 \usepackage{eso-pic}
 \usepackage{scrextend}
 \usepackage{setspace}
+\usepackage{wasysym}
 \definecolor{primary}{HTML}{de4f4f}
 \definecolor{secondary}{HTML}{2b2e39}
 \definecolor{accent}{HTML}{e0e0e0}
@@ -71,87 +72,39 @@
 
 \end{footnotesize}
 
+    \color{white}
+    \vspace{-2mm}
+
+    \begin{center}
+    \textbf{\Large------ Projects ------}\\
+    \end{center}
+    
+    \vspace{-5mm}
+    \begin{footnotesize}
+
+    \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}\\
+    \begin{itemize}
+        \item A browser extension that displays ads on your new tab page and donates the revenue generated to non-profits of your choice
+        \item Manage a team of 3 developers to through all steps of development
+    \end{itemize}
+
+    \end{footnotesize}
+
 \colorbox{primary}{
 \parbox{45.5em}{
     \color{secondary}
-    \begin{multicols}{2}
     \begin{center}
-    \textbf{\color{white}\large Proficiency}
-    \bigbreak
-    \begin{tikzpicture} 
-        \begin{axis}[
-        height=5cm,
-        width = 9cm,
-        xbar,
-        xmin=0,
-        xmax=100,
-        xtick={33,66,100},
-        xticklabels = {$n^2$, $n$, $log(n)$},
-        y axis line style = { opacity = 0 },
-        ytick             = data,
-        typeset ticklabels with strut, % improves vertical alignment of some of the ticklabels in this case (compare gcc and mcf with and without)
-        ytick style = {draw=none},
-        xtick pos=top,
-        every x tick/.style={black},
-        every x tick label/.append style={accent},
-        xticklabel style = {xshift=-.8cm},
-        enlarge y limits  = 0.2,
-        enlarge x limits  = 0.2,
-        symbolic y coords = {C++,HTML/CSS,JavaScript,Python},
-        ]
-        \addplot[secondary!20!secondary,fill=white!80!white] coordinates {(70,HTML/CSS)(90,Python)(90,JavaScript)(65,C++)};
-        \end{axis} 
-    \end{tikzpicture}
-    \smallbreak
-    \footnotesize
-    \end{center}
-    \columnbreak
-    
-    \begin{multicols}{2}
-	\center    
-    \textbf{\color{white}\large Proficient In}\\
+	\begin{tabular}{ c c c c c c c c c }
+ 	 & Python & JS/TS & React & Angular & PHP/Laravel & Ruby/Rails & AWS & Cloud Architecting  \\ 
+ 	Using Currently & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon \\  
+ 	Interested In Using & \newmoon  & \newmoon & \newmoon & \fullmoon & \newmoon & \LEFTcircle & \newmoon & \newmoon
+	\end{tabular}
+	\end{center}
+	\footnotesize
+    \textbf{Cloud Technologies I Use: } {\footnotesize AWS | Heroku | Terraform | Docker | GitlabCI | CircleCI | Github Actions }
     \flushleft
-    \setstretch{0.8}
-    \begin{addmargin}[2em]{0em}
-    Git\\
-    Vim\\
-    Agile\\
-    Linux\\
-    jQuery\\
-    Vue.js\\
-    Node.js\\
-    React Native\\
-    SQL Databases\\
-    ASP.NET + C\#\\
-    React.js + Redux\\
-
-    
-    \end{addmargin}
-    
-    \columnbreak
-    \center
-    \textbf{\color{white}\large Familiar With}\\
-    \begin{addmargin}[0em]{2em}
-
-	\begin{flushright}
-	\vspace{4mm}
-	Environment Design\\
-	Kubernetes\\
-	WordPress\\
-	CircleCI\\
-	Docker\\
-	NoSql\\
-	SCSS\\
-	Bash\\
-	Java\\
-	Php\\
-	Go\\
-    \end{flushright}
-    \end{addmargin}
-
-    
-    \end{multicols}
-    \end{multicols}
+    \vspace{-2mm}
+    \textbf{Tech I'm Mess Around With: } {\footnotesize Rust | Svelte}
 }}
     \color{secondary}
     \center
@@ -221,24 +174,5 @@
 
     \end{footnotesize}
     
-\colorbox{secondary}{
-    \parbox{45em}{
-    \color{white}
-    \vspace{-2mm}
 
-    \begin{center}
-    \textbf{\Large------ Projects ------}\\
-    \end{center}
-    
-    \vspace{-5mm}
-    \begin{footnotesize}
-
-    \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}\\
-    \begin{itemize}
-        \item A browser extension that displays ads on your new tab page and donates the revenue generated to non-profits of your choice
-        \item Manage a team of 3 developers to through all steps of development
-    \end{itemize}
-
-    \end{footnotesize}
-}}
 \end{document}
