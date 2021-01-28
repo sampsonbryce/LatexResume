@@ -11,6 +11,7 @@
 \usepackage{scrextend}
 \usepackage{setspace}
 \usepackage{wasysym}
+\usepackage{tcolorbox}% http://ctan.org/pkg/tcolorbox
 \definecolor{primary}{HTML}{de4f4f}
 \definecolor{secondary}{HTML}{2b2e39}
 \definecolor{accent}{HTML}{e0e0e0}
@@ -19,11 +20,15 @@
 %\renewcommand{\rmdefault}{bookman}
 \pagenumbering{gobble}
 
+\newtcolorbox{primarybox}{colback=primary,colframe=primary}
+\newtcolorbox{secondarybox}{colback=secondary,colframe=secondary}
+\newtcolorbox{accentbox}{colback=accent, colframe=accent}
+
 \pagecolor{secondary}
 \AddToShipoutPictureBG{
   \AtPageLowerLeft{%
     \color{accent}%
-    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-3.8in}%
+    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-4in}%
   }
 }
 
@@ -41,31 +46,29 @@
 \fontsize{12}{1.2}
 \selectfont
 \smallbreak
-\colorbox{accent}{
-    \parbox{45em}{
+\begin{accentbox}
         \centering
         \color{secondary}
-        sampson.bryce@protonmail.com | +46 768793494 | Spårvägen 4A, Malmö 212 52 \\
-        \large
-        \textbf{\color{primary}www.brycethebuilder.com |}
-        \textbf{\color{primary}www.github.com/sampsonbryce}
-    }
-}
+        sampson.bryce@protonmail.com | +46 768793494 | Spårvägen 4A, 212 52 Malmö | github.com/sampsonbryce
+    
+\end{accentbox}
 \smallskip
 \center
 \textbf{\Large------ Education ------}\\
+    \vspace{-2mm}
+
 \flushleft
 \begin{footnotesize}
-\textbf{California State University, Chico}
+\textbf{\color{primary}\large California State University, Chico}
 \hfill
-\textbf{\color{primary}Cumulative GPA: }3.55\\
+\textbf{\color{Cerulean}Cumulative GPA: }3.55\\
 
 \smallskip
 \begin{addmargin}[2em]{0em}
 
 - Bachelors Degree in Computer Science
 \hfill
-\textbf{\color{primary}Major GPA: }3.90\\
+\textbf{\color{Cerulean}Major GPA: }3.90\\
 \end{addmargin}
 
 \smallskip
@@ -79,19 +82,19 @@
     \textbf{\Large------ Projects ------}\\
     \end{center}
     
-    \vspace{-5mm}
+    \vspace{-2mm}
     \begin{footnotesize}
 
     \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}\\
     \begin{itemize}
+        \setlength{\itemsep}{0pt}
         \item A browser extension that displays ads on your new tab page and donates the revenue generated to non-profits of your choice
-        \item Manage a team of 3 developers to through all steps of development
+        \item Lead development and manage a team of 3 developers
     \end{itemize}
 
     \end{footnotesize}
 
-\colorbox{primary}{
-\parbox{45.5em}{
+\begin{primarybox}
     \color{secondary}
     \begin{center}
 	\begin{tabular}{ c c c c c c c c c }
@@ -104,8 +107,9 @@
     \textbf{Cloud Technologies I Use: } {\footnotesize AWS | Heroku | Terraform | Docker | GitlabCI | CircleCI | Github Actions }
     \flushleft
     \vspace{-2mm}
-    \textbf{Tech I'm Mess Around With: } {\footnotesize Rust | Svelte}
-}}
+    \textbf{Tech I Mess Around With: } {\footnotesize Rust | Svelte}
+
+\end{primarybox}
     \color{secondary}
     \center
     
@@ -122,9 +126,9 @@
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Took over full ownership of the Engage product, a gamification platform for incentivizing desirable behaviors within a company, after it was acquired from a startup
-        \item Implemented major refactors to remove code smells, significantly increase performance, remove numerous hacks, as well as implementing new features such as webhooks, redesigns, mass user imports, etc
-        \item Handled all support cases escalated to the developers as well as knowledge sharing and troubleshooting for all internal Lime consultants
-        \item Merged the Engage team with the Lime Addons team and now develop with the Addons team on Engage as well as new projects such as eSigning, and our Outlook integration
+        \item Implemented major refactors to remove code smells, significantly increase performance, as well setup the codebase to support features such as webhooks, mass user imports, and more
+        \item Handle all Engage support cases escalated to the developers as well as all Engage knowledge sharing and troubleshooting for all internal Lime consultants
+        \item Merged the Engage team with the Lime Addons team in early 2021 and now develop with the Addons team on Engage as well as new projects such as eSigning, and our Outlook integration
     \end{itemize}
     
     \flushleft
@@ -162,12 +166,12 @@
         \item Developed in-house account manangement tool for organizing and monitoring social media profiles
         \item Managed all company tech support and IT needs including company website development
     \end{itemize}
-    \textbf{\color{primary}\large Lawrence Livermore National Laboratory} \hfill \textbf{\color{Cerulean}PySide Qt | Python | HTML/CSS/JS | jQuery | React/Redux}\\
+    \textbf{\color{primary}\large Lawrence Livermore National Laboratory} \hfill \textbf{\color{Cerulean}PySide Qt | Python | HTML/CSS/JS | jQuery | React}\\
     {\color{primary}8 months | full-time | January - August 2016} \hfill {\color{Cerulean} Computation Intern}
     \vspace{-2mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
-        \item Developed a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and as a rewrite in HTML/CSS/JS, jQuery, React/Redux, and Flask
+        \item Developed a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and as a rewrite in HTML/CSS/JS, jQuery, React, and Flask
 
         \item Collaborated with scientists and collected feedback to improve user experience and implement new functionality
     \end{itemize}
