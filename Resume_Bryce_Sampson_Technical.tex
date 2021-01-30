@@ -1,8 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage[letterpaper, portrait, margin=.5in]{geometry}
-\usepackage[T1]{fontenc}
 %\usepackage{lmodern}
-\usepackage[letterspace=-50]{microtype}
+%\usepackage[letterspace=-50]{microtype}
+\usepackage{fontspec}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.8}
@@ -28,7 +28,7 @@
 \AddToShipoutPictureBG{
   \AtPageLowerLeft{%
     \color{accent}%
-    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-4in}%
+    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-4.3in}%
   }
 }
 
@@ -37,59 +37,56 @@
 \newcommand{\tab}[1]{\hspace{.1\textwidth}\rlap{#1}}
 
 \begin{document}
-\sffamily
-\lsstyle
-\color{white}
-\center
-\begin{Huge}\textbf{Bryce John Sampson}\end{Huge}\\
-\medskip
-\fontsize{12}{1.2}
-\selectfont
-\smallbreak
+\setmainfont{Futura PT}
+\begin{multicols}{2}
+    \null \vfill
+	\color{white}
+	\begin{Huge}\textbf{Bryce John Sampson}\end{Huge}
+	\vfill \null
+	\columnbreak
+
 \begin{accentbox}
-        \centering
-        \color{secondary}
-        sampson.bryce@protonmail.com | +46 768793494 | Spårvägen 4A, 212 52 Malmö | github.com/sampsonbryce
-    
+	\textbf{English:} \hfill Native \\
+	\textbf{Swedish:} \hfill SFI D Level
 \end{accentbox}
-\smallskip
-\center
-\textbf{\Large------ Education ------}\\
-    \vspace{-2mm}
+\end{multicols}
 
-\flushleft
-\begin{footnotesize}
-\textbf{\color{primary}\large California State University, Chico}
-\hfill
-\textbf{\color{Cerulean}Cumulative GPA: }3.55\\
+\fontsize{12}{1.2}
+\smallbreak
+\begin{multicols}{2}
 
-\smallskip
-\begin{addmargin}[2em]{0em}
-
-- Bachelors Degree in Computer Science
-\hfill
-\textbf{\color{Cerulean}Major GPA: }3.90\\
-\end{addmargin}
-
-\smallskip
-
-\end{footnotesize}
+\begin{accentbox}
+        \color{secondary}
+        \textbf{Email:} \hfill sampson.bryce@protonmail.com \\
+        \textbf{Phone:} \hfill +46 768793494 \\
+        \textbf{Address:} \hfill Spårvägen 4A, 212 52 Malmö \\ 
+        \textbf{Code:} \hfill github.com/sampsonbryce   
+\end{accentbox}
+\begin{accentbox}
+        \color{secondary}
+    	\textbf{University:} \hfill California State University, Chico \\
+    	\textbf{Degree:} \hfill Bachelors in Computer Science \\
+    	\textbf{GPA:} \hfill 3.55 out of 4 \\
+    	\textbf{Major GPA:} \hfill 3.90 out of 4 
+\end{accentbox}
+\end{multicols}
 
     \color{white}
     \vspace{-2mm}
 
     \begin{center}
-    \textbf{\Large------ Projects ------}\\
+    \textbf{\Large--- Projects ---}\\
     \end{center}
     
     \vspace{-2mm}
     \begin{footnotesize}
 
-    \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}\\
+    \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item A browser extension that displays ads on your new tab page and donates the revenue generated to non-profits of your choice
-        \item Lead development and manage a team of 3 developers
+        \item Lead developer for a team of three 
     \end{itemize}
 
     \end{footnotesize}
@@ -99,14 +96,13 @@
     \begin{center}
 	\begin{tabular}{ c c c c c c c c c }
  	 & Python & JS/TS & React & Angular & PHP/Laravel & Ruby/Rails & AWS & Cloud Architecting  \\ 
- 	Using Currently & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon \\  
- 	Interested In Using & \newmoon  & \newmoon & \newmoon & \fullmoon & \newmoon & \LEFTcircle & \newmoon & \newmoon
+ 	{\small Using Currently} & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon \\  
+ 	{\small Interested In Using} & \newmoon  & \newmoon & \newmoon & \fullmoon & \newmoon & \LEFTcircle & \newmoon & \newmoon
 	\end{tabular}
 	\end{center}
+	 \vspace{-2mm}
 	\footnotesize
-    \textbf{Cloud Technologies I Use: } {\footnotesize AWS | Heroku | Terraform | Docker | GitlabCI | CircleCI | Github Actions }
-    \flushleft
-    \vspace{-2mm}
+    \textbf{Cloud Technologies I Use: } {\footnotesize AWS | Heroku | Terraform | Docker | GitlabCI | CircleCI | Github Actions } \\
     \textbf{Tech I Mess Around With: } {\footnotesize Rust | Svelte}
 
 \end{primarybox}
@@ -115,14 +111,14 @@
     
     % Employment
     \begin{center}
-    \textbf{\Large------ Employment ------}\\
+    \textbf{\Large --- Employment ---}\\
     \end{center}
     \vspace{-2mm}
     \begin{footnotesize}
     \flushleft
     \textbf{\color{primary}\large Lime Technologies} \hfill \textbf{\color{Cerulean}React | Ruby on Rails | TypeScript | Python | Flask }\\ 
     {\color{primary}Current | full-time | August 2019 - Current} \hfill {\color{Cerulean} Software Engineer}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Took over full ownership of the Engage product, a gamification platform for incentivizing desirable behaviors within a company, after it was acquired from a startup
@@ -135,7 +131,7 @@
     
     \textbf{\color{primary}\large DesignByHumans} \hfill \textbf{\color{Cerulean}HTML/SCSS/JS | jQuery | PHP}\\ 
     {\color{primary}10 months | part-time | August 2018 - May 2019} \hfill {\color{Cerulean} Junior Front-End Engineer}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Developed web pages based on designer mockups, refactor backend code, and implement new features both customer facing and internal
@@ -152,7 +148,7 @@
     \flushleft
     \textbf{\color{primary}\large Workday Inc} \hfill \textbf{\color{Cerulean}Python | Bash}\\ 
     {\color{primary}4 months | full-time | May - August 2017} \hfill {\color{Cerulean} Environment Engineer Intern}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Automated a provisioning process using Python and Bash resulting in an estimated \$100,000 savings per year in man hours
@@ -168,7 +164,7 @@
     \end{itemize}
     \textbf{\color{primary}\large Lawrence Livermore National Laboratory} \hfill \textbf{\color{Cerulean}PySide Qt | Python | HTML/CSS/JS | jQuery | React}\\
     {\color{primary}8 months | full-time | January - August 2016} \hfill {\color{Cerulean} Computation Intern}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Developed a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and as a rewrite in HTML/CSS/JS, jQuery, React, and Flask
