@@ -1,8 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage[letterpaper, portrait, margin=.5in]{geometry}
-\usepackage[T1]{fontenc}
 %\usepackage{lmodern}
-\usepackage[letterspace=-50]{microtype}
+%\usepackage[letterspace=-50]{microtype}
+\usepackage{fontspec}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.8}
@@ -10,6 +10,8 @@
 \usepackage{eso-pic}
 \usepackage{scrextend}
 \usepackage{setspace}
+\usepackage{wasysym}
+\usepackage{tcolorbox}% http://ctan.org/pkg/tcolorbox
 \definecolor{primary}{HTML}{de4f4f}
 \definecolor{secondary}{HTML}{2b2e39}
 \definecolor{accent}{HTML}{e0e0e0}
@@ -18,11 +20,15 @@
 %\renewcommand{\rmdefault}{bookman}
 \pagenumbering{gobble}
 
+\newtcolorbox{primarybox}{colback=primary,colframe=primary}
+\newtcolorbox{secondarybox}{colback=secondary,colframe=secondary}
+\newtcolorbox{accentbox}{colback=accent, colframe=accent}
+
 \pagecolor{secondary}
 \AddToShipoutPictureBG{
   \AtPageLowerLeft{%
     \color{accent}%
-    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-3.8in}%
+    \rule{\pdfpagewidth}{\dimexpr\pdfpageheight-4.3in}%
   }
 }
 
@@ -31,145 +37,104 @@
 \newcommand{\tab}[1]{\hspace{.1\textwidth}\rlap{#1}}
 
 \begin{document}
-\sffamily
-\lsstyle
-\color{white}
-\center
-\begin{Huge}\textbf{Bryce John Sampson}\end{Huge}\\
-\medskip
+\setmainfont{Futura PT}
+\begin{multicols}{2}
+    \null \vfill
+	\color{white}
+	\begin{Huge}\textbf{Bryce John Sampson}\end{Huge}
+	\vfill \null
+	\columnbreak
+
+\begin{accentbox}
+	\textbf{English:} \hfill Native \\
+	\textbf{Swedish:} \hfill SFI D Level
+\end{accentbox}
+\end{multicols}
+
 \fontsize{12}{1.2}
-\selectfont
 \smallbreak
-\colorbox{accent}{
-    \parbox{45em}{
-        \centering
+\begin{multicols}{2}
+
+\begin{accentbox}
         \color{secondary}
-        sampson.bryce@protonmail.com | +1 530-859-5330 | 605 West 6th Street Apt 1 Chico, CA 95926 \\
-        \large
-        \textbf{\color{primary}www.brycethebuilder.com |}
-        \textbf{\color{primary}www.github.com/sampsonbryce}
-    }
-}
-\smallskip
-\center
-\textbf{\Large------ Education ------}\\
-\flushleft
-\begin{footnotesize}
-\textsc{California State University, Chico CA}
-\hfill
-\textbf{\color{primary}Major GPA: }3.90\\
+        \textbf{Email:} \hfill sampson.bryce@protonmail.com \\
+        \textbf{Phone:} \hfill +46 768793494 \\
+        \textbf{Address:} \hfill Spårvägen 4A, 212 52 Malmö \\ 
+        \textbf{Code:} \hfill github.com/sampsonbryce   
+\end{accentbox}
+\begin{accentbox}
+        \color{secondary}
+    	\textbf{University:} \hfill California State University, Chico \\
+    	\textbf{Degree:} \hfill Bachelors in Computer Science \\
+    	\textbf{GPA:} \hfill 3.55 out of 4 \\
+    	\textbf{Major GPA:} \hfill 3.90 out of 4 
+\end{accentbox}
+\end{multicols}
 
-\smallskip
-\textsc{Linnaeus University, Vaxjo Sweden (2017-18 Year Abroad)}
-\hfill
-\textbf{\color{primary}Cumulative GPA: }3.55\\
-\smallskip
+    \color{white}
+    \vspace{-2mm}
 
-{\color{accent}Expected Graduation Spring 2019}
-\hfill
-\textbf{\color{primary}Major: }Computer Science\\
-\smallskip
-
-\end{footnotesize}
-
-\colorbox{primary}{
-\parbox{45.5em}{
-    \color{secondary}
-    \begin{multicols}{2}
     \begin{center}
-    \textbf{\color{white}\large Proficiency}
-    \bigbreak
-    \begin{tikzpicture} 
-        \begin{axis}[
-        height=5cm,
-        width = 9cm,
-        xbar,
-        xmin=0,
-        xmax=100,
-        xtick={33,66,100},
-        xticklabels = {$n^2$, $n$, $log(n)$},
-        y axis line style = { opacity = 0 },
-        ytick             = data,
-        typeset ticklabels with strut, % improves vertical alignment of some of the ticklabels in this case (compare gcc and mcf with and without)
-        ytick style = {draw=none},
-        xtick pos=top,
-        every x tick/.style={black},
-        every x tick label/.append style={accent},
-        xticklabel style = {xshift=-.8cm},
-        enlarge y limits  = 0.2,
-        enlarge x limits  = 0.2,
-        symbolic y coords = {C++,HTML/CSS,JavaScript,Python},
-        ]
-        \addplot[secondary!20!secondary,fill=white!80!white] coordinates {(70,HTML/CSS)(90,Python)(90,JavaScript)(65,C++)};
-        \end{axis} 
-    \end{tikzpicture}
-    \smallbreak
-    \footnotesize
+    \textbf{\Large--- Projects ---}\\
     \end{center}
-    \columnbreak
     
-    \begin{multicols}{2}
-	\center    
-    \textbf{\color{white}\large Proficient In}\\
-    \flushleft
-    \setstretch{0.8}
-    \begin{addmargin}[2em]{0em}
-    Git\\
-    Vim\\
-    Agile\\
-    Linux\\
-    jQuery\\
-    Vue.js\\
-    Node.js\\
-    React Native\\
-    SQL Databases\\
-    ASP.NET + C\#\\
-    React.js + Redux\\
+    \vspace{-2mm}
+    \begin{footnotesize}
 
-    
-    \end{addmargin}
-    
-    \columnbreak
-    \center
-    \textbf{\color{white}\large Familiar With}\\
-    \begin{addmargin}[0em]{2em}
+    \textbf{\color{primary}\large HeroTab }{\color{primary}\footnotesize https://wehero.co/herotab} \hfill \textbf{\color{Cerulean}Angular | TypeScript | Laravel | PHP | AWS | Docker}
+    \vspace{-1mm}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item A browser extension that displays ads on your new tab page and donates the revenue generated to non-profits of your choice
+        \item Lead developer for a team of three 
+    \end{itemize}
 
-	\begin{flushright}
-	\vspace{4mm}
-	Environment Design\\
-	Kubernetes\\
-	WordPress\\
-	CircleCI\\
-	Docker\\
-	NoSql\\
-	SCSS\\
-	Bash\\
-	Java\\
-	Php\\
-	Go\\
-    \end{flushright}
-    \end{addmargin}
+    \end{footnotesize}
 
-    
-    \end{multicols}
-    \end{multicols}
-}}
+\begin{primarybox}
+    \color{secondary}
+    \begin{center}
+	\begin{tabular}{ c c c c c c c c c }
+ 	 & Python & JS/TS & React & Angular & PHP/Laravel & Ruby/Rails & AWS & Cloud Architecting  \\ 
+ 	{\small Using Currently} & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon & \newmoon \\  
+ 	{\small Interested In Using} & \newmoon  & \newmoon & \newmoon & \fullmoon & \newmoon & \LEFTcircle & \newmoon & \newmoon
+	\end{tabular}
+	\end{center}
+	 \vspace{-2mm}
+	\footnotesize
+    \textbf{Cloud Technologies I Use: } {\footnotesize AWS | Heroku | Terraform | Docker | GitlabCI | CircleCI | Github Actions } \\
+    \textbf{Tech I Mess Around With: } {\footnotesize Rust | Svelte}
+
+\end{primarybox}
     \color{secondary}
     \center
     
     % Employment
     \begin{center}
-    \textbf{\Large------ Employment ------}\\
+    \textbf{\Large --- Employment ---}\\
     \end{center}
     \vspace{-2mm}
     \begin{footnotesize}
     \flushleft
-    \textbf{\color{primary}\large DesignByHumans} {\color{primary}designbyhumans.com} \hfill \textbf{\color{Cerulean}HTML/SCSS/JS | jQuery | PHP}\\ 
-    {\color{primary}Current | part-time | August 2018 - Current} \hfill {\color{Cerulean} Junior Front-End Engineer}
-    \vspace{-2mm}
+    \textbf{\color{primary}\large Lime Technologies} \hfill \textbf{\color{Cerulean}React | Ruby on Rails | TypeScript | Python | Flask }\\ 
+    {\color{primary}Current | full-time | August 2019 - Current} \hfill {\color{Cerulean} Software Engineer}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
-        \item Develop web pages based on designer mockups, refactor backend code, and implement new features both customer facing and internal
+        \item Took over full ownership of the Engage product, a gamification platform for incentivizing desirable behaviors within a company, after it was acquired from a startup
+        \item Implemented major refactors to remove code smells, significantly increase performance, as well setup the codebase to support features such as webhooks, mass user imports, and more
+        \item Handle all Engage support cases escalated to the developers as well as all Engage knowledge sharing and troubleshooting for all internal Lime consultants
+        \item Merged the Engage team with the Lime Addons team in early 2021 and now develop with the Addons team on Engage as well as new projects such as eSigning, and our Outlook integration
+    \end{itemize}
+    
+    \flushleft
+    
+    \textbf{\color{primary}\large DesignByHumans} \hfill \textbf{\color{Cerulean}HTML/SCSS/JS | jQuery | PHP}\\ 
+    {\color{primary}10 months | part-time | August 2018 - May 2019} \hfill {\color{Cerulean} Junior Front-End Engineer}
+    \vspace{-1mm}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \item Developed web pages based on designer mockups, refactor backend code, and implement new features both customer facing and internal
     \end{itemize}
     \end{footnotesize}
     
@@ -183,7 +148,7 @@
     \flushleft
     \textbf{\color{primary}\large Workday Inc} \hfill \textbf{\color{Cerulean}Python | Bash}\\ 
     {\color{primary}4 months | full-time | May - August 2017} \hfill {\color{Cerulean} Environment Engineer Intern}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
         \item Automated a provisioning process using Python and Bash resulting in an estimated \$100,000 savings per year in man hours
@@ -197,47 +162,17 @@
         \item Developed in-house account manangement tool for organizing and monitoring social media profiles
         \item Managed all company tech support and IT needs including company website development
     \end{itemize}
-    \textbf{\color{primary}\large Lawrence Livermore National Laboratory} \hfill \textbf{\color{Cerulean}PySide Qt | Python | HTML/CSS/JS | jQuery | React/Redux}\\
+    \textbf{\color{primary}\large Lawrence Livermore National Laboratory} \hfill \textbf{\color{Cerulean}PySide Qt | Python | HTML/CSS/JS | jQuery | React}\\
     {\color{primary}8 months | full-time | January - August 2016} \hfill {\color{Cerulean} Computation Intern}
-    \vspace{-2mm}
+    \vspace{-1mm}
     \begin{itemize}
         \setlength{\itemsep}{0pt}
-        \item Employed in a Co-op position, developing a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and from scratch in HTML/CSS/JS, jQuery, React/Redux, and Flask
+        \item Developed a Graphical User Interface for a large scale climate data visualization and analysis tool in both PySide Qt and as a rewrite in HTML/CSS/JS, jQuery, React, and Flask
 
-        \item Collaborated with scientists using alpha, beta and previous versions of GUI to improve user experience and implement new functionality
+        \item Collaborated with scientists and collected feedback to improve user experience and implement new functionality
     \end{itemize}
 
     \end{footnotesize}
     
-\colorbox{secondary}{
-    \parbox{45em}{
-    \color{white}
-    \vspace{-2mm}
 
-    \begin{center}
-    \textbf{\Large------ Projects ------}\\
-    \end{center}
-    
-    \vspace{-5mm}
-    \begin{footnotesize}
-
-    \textbf{\color{primary}\large Hero Home } \hfill \textbf{\color{Cerulean}Vue.js | HTML/CSS | Node.js/Express | Nginx }\\
-    {\color{primary}\footnotesize home.heroinc.io}
-    \begin{itemize}
-        \item Chrome Extension and Home Page for Google search that displays advertisements to raise money for charity
-    \end{itemize}
-
-
-    \flushleft
-
-    \textbf{\color{primary}\large The Rek} \hfill \textbf{\color{Cerulean} Node.js | React Native | GraphQL | Prisma | Apollo}
-    \begin{itemize}
-        \item Team of 4 developers and 1 entrepreneur building a mobile app for The Rekweem, and high class business encompassing haircuts, massages, and mani-pedi. App provides functionality for storing headshots, booking appointments, and ecommerce.
-    \end{itemize}
-
-    \end{footnotesize}
-}}
-
-%\center
-%Created with \LaTeX
 \end{document}
